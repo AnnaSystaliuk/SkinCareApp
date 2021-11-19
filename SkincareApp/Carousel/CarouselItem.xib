@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselItem" customModule="SkincareApp" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="EXP-2P-cNQ" id="stx-1J-T4X"/>
+                <outlet property="lblTitle" destination="gMt-8v-RYu" id="noI-iy-kVR"/>
+                <outlet property="vwContent" destination="iN0-l3-epB" id="lHs-tZ-YlA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EXP-2P-cNQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMt-8v-RYu">
+                    <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gMt-8v-RYu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Bpm-jK-ou5"/>
+                <constraint firstItem="gMt-8v-RYu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="D6n-vb-Lqx"/>
+                <constraint firstAttribute="trailing" secondItem="EXP-2P-cNQ" secondAttribute="trailing" id="KWi-LF-b3O"/>
+                <constraint firstAttribute="bottom" secondItem="EXP-2P-cNQ" secondAttribute="bottom" id="PLg-J3-vo9"/>
+                <constraint firstItem="EXP-2P-cNQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lgV-Hk-i0Y"/>
+                <constraint firstItem="EXP-2P-cNQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uBK-zM-OzJ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
+        </view>
+    </objects>
+</document>

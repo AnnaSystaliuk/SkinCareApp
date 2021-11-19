@@ -1,0 +1,28 @@
+PODS:
+  - MapboxCommon (20.0.0)
+  - MapboxMobileEvents (1.0.6)
+  - MapboxSearch (1.0.0-beta.15):
+    - MapboxCommon (~> 20.0.0)
+    - MapboxMobileEvents (~> 1.0.5)
+  - MapboxSearchUI (1.0.0-beta.15):
+    - MapboxSearch (< 2.0, >= 1.0.0-beta.15)
+
+DEPENDENCIES:
+  - MapboxSearchUI (< 2.0, >= 1.0.0-beta.15)
+
+SPEC REPOS:
+  trunk:
+    - MapboxCommon
+    - MapboxMobileEvents
+    - MapboxSearch
+    - MapboxSearchUI
+
+SPEC CHECKSUMS:
+  MapboxCommon: 18ae12e6b4286f59f685862aaa5766fd95828ce2
+  MapboxMobileEvents: 14d7ac3ee95b4142c4fec2205dfd48ff453e8871
+  MapboxSearch: 82d7414e7bb51b290d85d6762918ef17d31fa07b
+  MapboxSearchUI: 6248d8842f33c1a74dee2534d7b17267f8c9de3a
+
+PODFILE CHECKSUM: 2ae7493f065a464a165f53be3c65b04f0a2bc726
+
+COCOAPODS: 1.10.1

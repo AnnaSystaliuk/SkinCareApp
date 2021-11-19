@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9557F16127408EE300F2D8AE /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557F16027408EE300F2D8AE /* BookAppointmentViewController.swift */; };
+		9557F1642745972D00F2D8AE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557F1632745972D00F2D8AE /* Service.swift */; };
+		9557F1672746328000F2D8AE /* AppointmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9557F1662746328000F2D8AE /* AppointmentView.xib */; };
+		9557F1692746329200F2D8AE /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557F1682746329200F2D8AE /* AppointmentView.swift */; };
+		9557F16B2746F35200F2D8AE /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557F16A2746F35200F2D8AE /* AppointmentsViewController.swift */; };
+		95675AAD2731C2A600D28BC6 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 95675AAC2731C2A600D28BC6 /* Cosmos */; };
+		95710C8A273DBC5F00D08643 /* PlaceServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95710C89273DBC5F00D08643 /* PlaceServiceView.xib */; };
+		95710C8C273DC90900D08643 /* PlaceServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710C8B273DC90900D08643 /* PlaceServiceView.swift */; };
+		9576B7F4271F422000C1EA0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B7F3271F422000C1EA0E /* AppDelegate.swift */; };
+		9576B7F6271F422000C1EA0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B7F5271F422000C1EA0E /* SceneDelegate.swift */; };
+		9576B7F8271F422000C1EA0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B7F7271F422000C1EA0E /* ViewController.swift */; };
+		9576B7FB271F422000C1EA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9576B7F9271F422000C1EA0E /* Main.storyboard */; };
+		9576B7FD271F422200C1EA0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9576B7FC271F422200C1EA0E /* Assets.xcassets */; };
+		9576B800271F422200C1EA0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9576B7FE271F422200C1EA0E /* LaunchScreen.storyboard */; };
+		9576B80B271F422200C1EA0E /* SkincareAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B80A271F422200C1EA0E /* SkincareAppTests.swift */; };
+		9576B816271F422200C1EA0E /* SkincareAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B815271F422200C1EA0E /* SkincareAppUITests.swift */; };
+		9576B825271F8B0900C1EA0E /* SkinCareDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9576B823271F8B0900C1EA0E /* SkinCareDay.xcdatamodeld */; };
+		9576B82D2721FECC00C1EA0E /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B82B2721FECC00C1EA0E /* Task+CoreDataClass.swift */; };
+		9576B82E2721FECC00C1EA0E /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B82C2721FECC00C1EA0E /* Task+CoreDataProperties.swift */; };
+		9576B8302721FEF200C1EA0E /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B82F2721FEF200C1EA0E /* Enums.swift */; };
+		9576B83227233C9F00C1EA0E /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B83127233C9F00C1EA0E /* MapViewViewController.swift */; };
+		9576B8392723573600C1EA0E /* Appointment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B8372723573600C1EA0E /* Appointment+CoreDataClass.swift */; };
+		9576B83A2723573600C1EA0E /* Appointment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B8382723573600C1EA0E /* Appointment+CoreDataProperties.swift */; };
+		9576B83C2727A74000C1EA0E /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B83B2727A74000C1EA0E /* PlaceDetailsViewController.swift */; };
+		9576B840272B3ED100C1EA0E /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B83F272B3ED100C1EA0E /* MyPageViewController.swift */; };
+		9576B842272B400900C1EA0E /* CarouselItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9576B841272B400900C1EA0E /* CarouselItem.xib */; };
+		9576B845272B421D00C1EA0E /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B844272B421D00C1EA0E /* CarouselItem.swift */; };
+		9576B847272DF2A000C1EA0E /* MyRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576B846272DF2A000C1EA0E /* MyRequestController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9576B807271F422200C1EA0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9576B7E8271F422000C1EA0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9576B7EF271F422000C1EA0E;
+			remoteInfo = SkincareApp;
+		};
+		9576B812271F422200C1EA0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9576B7E8271F422000C1EA0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9576B7EF271F422000C1EA0E;
+			remoteInfo = SkincareApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9557F16027408EE300F2D8AE /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		9557F1632745972D00F2D8AE /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		9557F1662746328000F2D8AE /* AppointmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentView.xib; sourceTree = "<group>"; };
+		9557F1682746329200F2D8AE /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
+		9557F16A2746F35200F2D8AE /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		95710C89273DBC5F00D08643 /* PlaceServiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceServiceView.xib; sourceTree = "<group>"; };
+		95710C8B273DC90900D08643 /* PlaceServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceServiceView.swift; sourceTree = "<group>"; };
+		9576B7F0271F422000C1EA0E /* SkincareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkincareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9576B7F3271F422000C1EA0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9576B7F5271F422000C1EA0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9576B7F7271F422000C1EA0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9576B7FA271F422000C1EA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9576B7FC271F422200C1EA0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9576B7FF271F422200C1EA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9576B801271F422200C1EA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9576B806271F422200C1EA0E /* SkincareAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkincareAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9576B80A271F422200C1EA0E /* SkincareAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkincareAppTests.swift; sourceTree = "<group>"; };
+		9576B80C271F422200C1EA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9576B811271F422200C1EA0E /* SkincareAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkincareAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9576B815271F422200C1EA0E /* SkincareAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkincareAppUITests.swift; sourceTree = "<group>"; };
+		9576B817271F422200C1EA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9576B824271F8B0900C1EA0E /* SkinCareDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkinCareDay.xcdatamodel; sourceTree = "<group>"; };
+		9576B82B2721FECC00C1EA0E /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9576B82C2721FECC00C1EA0E /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9576B82F2721FEF200C1EA0E /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		9576B83127233C9F00C1EA0E /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		9576B8372723573600C1EA0E /* Appointment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Appointment+CoreDataClass.swift"; path = "../../Appointment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9576B8382723573600C1EA0E /* Appointment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Appointment+CoreDataProperties.swift"; path = "../../Appointment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9576B83B2727A74000C1EA0E /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		9576B83F272B3ED100C1EA0E /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		9576B841272B400900C1EA0E /* CarouselItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselItem.xib; sourceTree = "<group>"; };
+		9576B844272B421D00C1EA0E /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
+		9576B846272DF2A000C1EA0E /* MyRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9576B7ED271F422000C1EA0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95675AAD2731C2A600D28BC6 /* Cosmos in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576B803271F422200C1EA0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576B80E271F422200C1EA0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9557F1622745971300F2D8AE /* BookAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				9557F16027408EE300F2D8AE /* BookAppointmentViewController.swift */,
+				9557F1632745972D00F2D8AE /* Service.swift */,
+			);
+			path = BookAppointment;
+			sourceTree = "<group>";
+		};
+		9557F1652746324B00F2D8AE /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				9557F1662746328000F2D8AE /* AppointmentView.xib */,
+				9557F1682746329200F2D8AE /* AppointmentView.swift */,
+				9557F16A2746F35200F2D8AE /* AppointmentsViewController.swift */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		95710C88273DBC2300D08643 /* PlaceDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9576B83B2727A74000C1EA0E /* PlaceDetailsViewController.swift */,
+				95710C89273DBC5F00D08643 /* PlaceServiceView.xib */,
+				95710C8B273DC90900D08643 /* PlaceServiceView.swift */,
+			);
+			path = PlaceDetailsScreen;
+			sourceTree = "<group>";
+		};
+		9576B7E7271F422000C1EA0E = {
+			isa = PBXGroup;
+			children = (
+				9576B7F2271F422000C1EA0E /* SkincareApp */,
+				9576B809271F422200C1EA0E /* SkincareAppTests */,
+				9576B814271F422200C1EA0E /* SkincareAppUITests */,
+				9576B7F1271F422000C1EA0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9576B7F1271F422000C1EA0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9576B7F0271F422000C1EA0E /* SkincareApp.app */,
+				9576B806271F422200C1EA0E /* SkincareAppTests.xctest */,
+				9576B811271F422200C1EA0E /* SkincareAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9576B7F2271F422000C1EA0E /* SkincareApp */ = {
+			isa = PBXGroup;
+			children = (
+				9557F1652746324B00F2D8AE /* Appointments */,
+				9557F1622745971300F2D8AE /* BookAppointment */,
+				95710C88273DBC2300D08643 /* PlaceDetailsScreen */,
+				9576B843272B401B00C1EA0E /* Carousel */,
+				9576B82A2720B6C900C1EA0E /* Model */,
+				9576B7F3271F422000C1EA0E /* AppDelegate.swift */,
+				9576B83127233C9F00C1EA0E /* MapViewViewController.swift */,
+				9576B7F5271F422000C1EA0E /* SceneDelegate.swift */,
+				9576B7F7271F422000C1EA0E /* ViewController.swift */,
+				9576B7F9271F422000C1EA0E /* Main.storyboard */,
+				9576B7FC271F422200C1EA0E /* Assets.xcassets */,
+				9576B7FE271F422200C1EA0E /* LaunchScreen.storyboard */,
+				9576B801271F422200C1EA0E /* Info.plist */,
+				9576B846272DF2A000C1EA0E /* MyRequestController.swift */,
+			);
+			path = SkincareApp;
+			sourceTree = "<group>";
+		};
+		9576B809271F422200C1EA0E /* SkincareAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9576B80A271F422200C1EA0E /* SkincareAppTests.swift */,
+				9576B80C271F422200C1EA0E /* Info.plist */,
+			);
+			path = SkincareAppTests;
+			sourceTree = "<group>";
+		};
+		9576B814271F422200C1EA0E /* SkincareAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9576B815271F422200C1EA0E /* SkincareAppUITests.swift */,
+				9576B817271F422200C1EA0E /* Info.plist */,
+			);
+			path = SkincareAppUITests;
+			sourceTree = "<group>";
+		};
+		9576B82A2720B6C900C1EA0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9576B8372723573600C1EA0E /* Appointment+CoreDataClass.swift */,
+				9576B8382723573600C1EA0E /* Appointment+CoreDataProperties.swift */,
+				9576B82B2721FECC00C1EA0E /* Task+CoreDataClass.swift */,
+				9576B82C2721FECC00C1EA0E /* Task+CoreDataProperties.swift */,
+				9576B823271F8B0900C1EA0E /* SkinCareDay.xcdatamodeld */,
+				9576B82F2721FEF200C1EA0E /* Enums.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9576B843272B401B00C1EA0E /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				9576B841272B400900C1EA0E /* CarouselItem.xib */,
+				9576B83F272B3ED100C1EA0E /* MyPageViewController.swift */,
+				9576B844272B421D00C1EA0E /* CarouselItem.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9576B7EF271F422000C1EA0E /* SkincareApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9576B81A271F422200C1EA0E /* Build configuration list for PBXNativeTarget "SkincareApp" */;
+			buildPhases = (
+				9576B7EC271F422000C1EA0E /* Sources */,
+				9576B7ED271F422000C1EA0E /* Frameworks */,
+				9576B7EE271F422000C1EA0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkincareApp;
+			packageProductDependencies = (
+				95675AAC2731C2A600D28BC6 /* Cosmos */,
+			);
+			productName = SkincareApp;
+			productReference = 9576B7F0271F422000C1EA0E /* SkincareApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9576B805271F422200C1EA0E /* SkincareAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9576B81D271F422200C1EA0E /* Build configuration list for PBXNativeTarget "SkincareAppTests" */;
+			buildPhases = (
+				9576B802271F422200C1EA0E /* Sources */,
+				9576B803271F422200C1EA0E /* Frameworks */,
+				9576B804271F422200C1EA0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9576B808271F422200C1EA0E /* PBXTargetDependency */,
+			);
+			name = SkincareAppTests;
+			productName = SkincareAppTests;
+			productReference = 9576B806271F422200C1EA0E /* SkincareAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9576B810271F422200C1EA0E /* SkincareAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9576B820271F422200C1EA0E /* Build configuration list for PBXNativeTarget "SkincareAppUITests" */;
+			buildPhases = (
+				9576B80D271F422200C1EA0E /* Sources */,
+				9576B80E271F422200C1EA0E /* Frameworks */,
+				9576B80F271F422200C1EA0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9576B813271F422200C1EA0E /* PBXTargetDependency */,
+			);
+			name = SkincareAppUITests;
+			productName = SkincareAppUITests;
+			productReference = 9576B811271F422200C1EA0E /* SkincareAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9576B7E8271F422000C1EA0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9576B7EF271F422000C1EA0E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9576B805271F422200C1EA0E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9576B7EF271F422000C1EA0E;
+					};
+					9576B810271F422200C1EA0E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9576B7EF271F422000C1EA0E;
+					};
+				};
+			};
+			buildConfigurationList = 9576B7EB271F422000C1EA0E /* Build configuration list for PBXProject "SkincareApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9576B7E7271F422000C1EA0E;
+			packageReferences = (
+				95675AAB2731C2A600D28BC6 /* XCRemoteSwiftPackageReference "Cosmos" */,
+			);
+			productRefGroup = 9576B7F1271F422000C1EA0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9576B7EF271F422000C1EA0E /* SkincareApp */,
+				9576B805271F422200C1EA0E /* SkincareAppTests */,
+				9576B810271F422200C1EA0E /* SkincareAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9576B7EE271F422000C1EA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576B800271F422200C1EA0E /* LaunchScreen.storyboard in Resources */,
+				9576B7FD271F422200C1EA0E /* Assets.xcassets in Resources */,
+				9557F1672746328000F2D8AE /* AppointmentView.xib in Resources */,
+				9576B842272B400900C1EA0E /* CarouselItem.xib in Resources */,
+				9576B7FB271F422000C1EA0E /* Main.storyboard in Resources */,
+				95710C8A273DBC5F00D08643 /* PlaceServiceView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576B804271F422200C1EA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576B80F271F422200C1EA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9576B7EC271F422000C1EA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576B7F8271F422000C1EA0E /* ViewController.swift in Sources */,
+				9576B847272DF2A000C1EA0E /* MyRequestController.swift in Sources */,
+				9576B82D2721FECC00C1EA0E /* Task+CoreDataClass.swift in Sources */,
+				9576B7F4271F422000C1EA0E /* AppDelegate.swift in Sources */,
+				9576B83C2727A74000C1EA0E /* PlaceDetailsViewController.swift in Sources */,
+				9576B825271F8B0900C1EA0E /* SkinCareDay.xcdatamodeld in Sources */,
+				9576B8302721FEF200C1EA0E /* Enums.swift in Sources */,
+				9576B845272B421D00C1EA0E /* CarouselItem.swift in Sources */,
+				95710C8C273DC90900D08643 /* PlaceServiceView.swift in Sources */,
+				9576B83A2723573600C1EA0E /* Appointment+CoreDataProperties.swift in Sources */,
+				9557F1692746329200F2D8AE /* AppointmentView.swift in Sources */,
+				9557F16B2746F35200F2D8AE /* AppointmentsViewController.swift in Sources */,
+				9576B840272B3ED100C1EA0E /* MyPageViewController.swift in Sources */,
+				9557F1642745972D00F2D8AE /* Service.swift in Sources */,
+				9576B82E2721FECC00C1EA0E /* Task+CoreDataProperties.swift in Sources */,
+				9576B8392723573600C1EA0E /* Appointment+CoreDataClass.swift in Sources */,
+				9576B83227233C9F00C1EA0E /* MapViewViewController.swift in Sources */,
+				9576B7F6271F422000C1EA0E /* SceneDelegate.swift in Sources */,
+				9557F16127408EE300F2D8AE /* BookAppointmentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576B802271F422200C1EA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576B80B271F422200C1EA0E /* SkincareAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576B80D271F422200C1EA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576B816271F422200C1EA0E /* SkincareAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9576B808271F422200C1EA0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9576B7EF271F422000C1EA0E /* SkincareApp */;
+			targetProxy = 9576B807271F422200C1EA0E /* PBXContainerItemProxy */;
+		};
+		9576B813271F422200C1EA0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9576B7EF271F422000C1EA0E /* SkincareApp */;
+			targetProxy = 9576B812271F422200C1EA0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9576B7F9271F422000C1EA0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9576B7FA271F422000C1EA0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9576B7FE271F422200C1EA0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9576B7FF271F422200C1EA0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9576B818271F422200C1EA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9576B819271F422200C1EA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9576B81B271F422200C1EA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WM7K8S494T;
+				INFOPLIST_FILE = SkincareApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annasystaliuk.SkincareApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9576B81C271F422200C1EA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WM7K8S494T;
+				INFOPLIST_FILE = SkincareApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annasystaliuk.SkincareApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9576B81E271F422200C1EA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkincareAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annasystaliuk.SkincareAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkincareApp.app/SkincareApp";
+			};
+			name = Debug;
+		};
+		9576B81F271F422200C1EA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkincareAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annasystaliuk.SkincareAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkincareApp.app/SkincareApp";
+			};
+			name = Release;
+		};
+		9576B821271F422200C1EA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkincareAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annasystaliuk.SkincareAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkincareApp;
+			};
+			name = Debug;
+		};
+		9576B822271F422200C1EA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkincareAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annasystaliuk.SkincareAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkincareApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9576B7EB271F422000C1EA0E /* Build configuration list for PBXProject "SkincareApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576B818271F422200C1EA0E /* Debug */,
+				9576B819271F422200C1EA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9576B81A271F422200C1EA0E /* Build configuration list for PBXNativeTarget "SkincareApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576B81B271F422200C1EA0E /* Debug */,
+				9576B81C271F422200C1EA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9576B81D271F422200C1EA0E /* Build configuration list for PBXNativeTarget "SkincareAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576B81E271F422200C1EA0E /* Debug */,
+				9576B81F271F422200C1EA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9576B820271F422200C1EA0E /* Build configuration list for PBXNativeTarget "SkincareAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576B821271F422200C1EA0E /* Debug */,
+				9576B822271F422200C1EA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95675AAB2731C2A600D28BC6 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95675AAC2731C2A600D28BC6 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95675AAB2731C2A600D28BC6 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9576B823271F8B0900C1EA0E /* SkinCareDay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9576B824271F8B0900C1EA0E /* SkinCareDay.xcdatamodel */,
+			);
+			currentVersion = 9576B824271F8B0900C1EA0E /* SkinCareDay.xcdatamodel */;
+			path = SkinCareDay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9576B7E8271F422000C1EA0E /* Project object */;
+}
